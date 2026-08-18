@@ -43,15 +43,6 @@ php artisan serve
 
 В репозитории также есть Docker Compose (`mysql:8.4`, PHP 8.2, nginx). Если запускаете через него, внутри контейнера приложения `DB_HOST=mysql`.
 
-## Postman
-
-Импортируйте оба файла из `postman/`:
-
-1. `Slot-Booking.postman_collection.json`
-2. `local.postman_environment.json`
-
-Выберите окружение **Slot Booking Local** (`http://localhost:8000`). Папки запускайте по порядку: Availability → Create hold → Confirm → Cancel → Validation → Conflicts. Запросы создания hold сами генерируют UUID и сохраняют `holdId`.
-
 ## Тесты
 
 ```bash
